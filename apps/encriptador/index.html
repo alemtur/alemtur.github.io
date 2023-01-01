@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css">    
+    <title>Encriptador de Texto | Alura Latam</title>
+</head>
+<body>
+    
+    
+    <main>
+        
+        <div class="div-logo">
+            <img class="logo" src="imagenes/logo.png" alt="Logo de Alura">
+        </div>
+
+        <div class="div-texto">
+            <textarea class="areatexto" id="areatexto" placeholder="Ingrese el texto aquí"></textarea>
+            
+        </div>
+
+        <div class="div-resultado">
+            <textarea readonly cols="30" rows="10" class="arearesultado" id="arearesultado"></textarea>
+            <img class="munieco" id="munieco" src="imagenes/munieco.png" alt="Muñeco búsqueda">
+            <div class="leyenda-resultado" id="leyenda-resultado">
+                <label class="leyenda-label1">Ningún mensaje fue encontrado</label>
+                <label class="leyenda-label2">Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+            <button class="boton-copiar" id="boton-copiar">Copiar</button>
+        </div>
+
+        <div class="div-leyenda">
+            <img class="exclamation" src="imagenes/bi_exclamation-circle-fill.png" alt="Signo de exclamación">
+            <label class="leyenda">Solo letras minúsculas y sin acentos</label>
+        </div>
+
+        <div class="div-botones">
+            <button class="boton-encriptar" id="boton-encriptar">Encriptar</button>
+            <button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy Copyright Alejandro Turtola - 2022 | Encriptador de Texto - Desafío 1 de <a class="alura-latam-link" href="https://www.aluracursos.com/">Alura Latam</a> Challenges ONE</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

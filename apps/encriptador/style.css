@@ -1,0 +1,483 @@
+/* CSS PARA EL TRABAJO EN PC DE PRODUCCION */
+
+body {
+    margin-left: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100vw;    
+}
+
+.div-logo {
+    display: flex;    
+    position: absolute;
+    top: 5%;
+    left: 2%;      
+}
+
+.div-texto {
+    position: absolute;
+
+    top: 18%;
+    left: 12%;
+
+    width: 50%;
+    height: 60%;    
+
+    box-shadow: 0px 32px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 35px;
+    background: rgb(208, 231, 250);
+}
+
+.areatexto {
+    /* Ingrese el texto aqui */
+    position: absolute;
+    left: 2%;
+    top: 2%;
+
+    width: 95%;
+    height: 95%;    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    
+    color: #0A3871;
+    
+    border-radius: 20px;    
+    background: rgb(208, 231, 250);
+
+}
+
+.areatexto, .arearesultado {
+    border: none;
+    outline: none;
+}
+
+.div-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    
+    position: absolute;
+
+    left: 67%;
+    top: 5%;
+
+    width: 30%;
+    height: 90%;
+    
+    background: rgb(208, 231, 250);
+
+    box-shadow: 0px 32px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 35px;
+}
+
+.arearesultado {
+    position: absolute;
+
+    left: 7%;
+    top: 10%;
+
+    width: 85%;
+    height: 70%;    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+        
+    color: #495057;
+    background: rgb(208, 231, 250);
+    visibility: hidden;
+}
+
+.munieco {
+/* Muñeco */
+position: absolute;
+
+left: 10%;
+top: 20%;
+
+width: 80%;
+height: 40%;
+}
+
+.leyenda-resultado {
+    
+    display: flex;
+    flex-direction: column;   
+
+    position: absolute;
+    
+    top: 70%;
+    left: 7%;
+    
+    width: 100%;
+    height: 30%;
+
+    gap: 10%;   
+    
+    text-align: center;
+    
+
+}
+
+.leyenda-label1 {
+
+    position: absolute;
+    width: 80%;
+    height: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    
+    color: #343A40;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.leyenda-label2 {
+
+    position: absolute;
+    width: 80%;
+    height: auto;
+
+    top: 40%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    
+    color: #495057;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.boton-copiar {
+    position: absolute;
+    top: 85%;
+    visibility: hidden;
+}
+
+.div-leyenda {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    left: 12%;
+    top: 78%;
+    
+    width: auto;
+    height: auto;
+
+    padding: 0%;
+    gap: 2%;  
+    
+
+}
+
+.exclamation {
+    /* bi:exclamation-circle-fill */
+    width: auto;
+    height: auto;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.leyenda {
+    /* Solo letras minúsculas y sin acentos */    
+    width: auto;
+    height: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90%;
+    line-height: 150%;
+    
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.div-botones {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    position: absolute;
+    left: 12%;
+    top: 82%;
+    
+    padding: 0%;
+    gap: 2%;
+    
+    width: 40%;
+    height: auto;
+}
+
+.boton-encriptar, .boton-desencriptar, .boton-copiar {
+    /* Button */
+    box-sizing: border-box;
+    
+    padding: 2%;
+    gap: 8%;
+
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    text-align: center;
+}
+
+main button:hover {
+    background: #0A3871;
+    color: cyan;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    top: 100%;
+    width:100%;
+    padding-top: 1.5%;    
+
+    background: #0A3871;
+
+    text-align: center;
+    color: white;
+    
+}
+
+.alura-latam-link {
+    color: cyan;
+}
+
+/* Encriptador - Desktop */
+@media screen and (max-width:1440px){
+      
+    .leyenda-resultado {
+        width: 85%;
+    }
+
+    .arearesultado {
+        left: 9%;
+        top: 7%;
+        width: 80%;
+        visibility: hidden;
+    }
+
+    .munieco {
+        left: auto;
+        width: 90%;
+        
+    }
+
+    .leyenda-label1 {
+        left: inherit;        
+    }
+
+    .leyenda-label2 {
+        left: inherit;        
+    }
+    
+    .boton-copiar {
+        visibility: hidden;
+    }
+
+    footer {
+        height: 10%;
+        font-size: 1.2rem;
+        
+    }  
+}
+
+
+/* Encriptador - Tablet */
+@media screen and (max-width:768px){  
+    
+    main {
+        width: 100vw;
+        
+    }
+
+    .div-logo {
+        left: 0%;        
+    }
+
+    .div-texto {
+        
+        left: 5%;
+        width: 90%;
+        height: 50%;
+
+    }
+
+    .div-leyenda, .div-botones, .div-resultado {
+        left: 5%;
+    }
+
+    .div-leyenda {
+        top: 70%;
+    }
+
+    .div-botones {
+        top: 73%;
+        width: 90%;
+    }
+
+    .div-resultado {
+        top: 83%;
+        width: 90%;
+        height: 12%;    
+    }
+
+    .munieco {
+        visibility: hidden;        
+    }
+
+    .leyenda-resultado {
+        top: 15%;
+        width: 85%;       
+        
+    }
+
+    .leyenda-label1, .leyenda-label2 {
+        
+        left: inherit;
+    }
+
+    .leyenda-label2 {
+        top: 100%;
+        
+    }
+
+    .arearesultado, .boton-copiar {
+        visibility: hidden;
+    }
+
+    .boton-copiar {
+        top:100%;
+        margin-top: 2%;        
+    }
+
+    footer {
+        top: 110%;
+        height: 10%;              
+                
+    }
+}
+
+/* Encriptador - Celular */
+@media screen and (max-width:375px){
+    
+   
+    main {
+        width: 100vw;
+    }
+
+    .div-logo {
+        left: 0%;     
+        
+    }
+
+    .logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    .div-texto {
+        left: 5%;
+        width: 90%;
+
+    }
+
+    .div-leyenda, .div-botones, .div-resultado {
+        left: 5%;
+    }
+
+    .div-botones {
+        flex-direction: column;
+        
+    }
+
+    .boton-desencriptar {
+        margin-top: 1%;
+    }
+
+    .div-resultado {
+        top: 90%;
+        width: 90%;
+        height: 16%;
+           
+    }
+
+    .munieco {
+        visibility: hidden;
+    }
+
+    .leyenda-resultado {
+        top: 15%;
+    }
+
+    .leyenda-label2 {
+        top: 100%;
+        margin-top: 7%;
+    }
+
+    .arearesultado, .boton-copiar {
+        visibility: hidden;
+    }
+
+    .boton-copiar {
+        top:100%;
+        margin-top: 2%;
+    }
+
+    footer {
+        top: 115%;
+        height: 11%;
+        
+        
+    }
+
+}
+

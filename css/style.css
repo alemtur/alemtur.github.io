@@ -1,0 +1,107 @@
+body {
+    margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-encriptador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+    border-style: solid;
+    border-color: blue;
+    
+    border-radius: 30px;
+    width: 60%;
+    
+}
+
+h4, img, iframe {
+    padding-bottom: 4%;
+}
+
+.imagen-encriptador {
+    position: relative;
+    width: 80%;
+    
+}
+
+.frame-video {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    
+    top: 160%;
+    width:100%;
+    
+    background: cornflowerblue;    
+}
+
+footer p {
+    color: white;
+}
+
+.div-footer {
+    text-align: center;
+}
+
+.bi {
+    padding-right: 1%;
+    
+}
+
+
+/* Encriptador - Tablet */
+@media screen and (max-width:768px){  
+
+    iframe {
+        width: 70%;
+        height: 70%;
+    }
+
+    .div-encriptador h4 {
+        font-size: medium;
+    }
+
+    footer {
+        top: 100%;
+    }
+    
+}
+
+/* Encriptador - Celular */
+@media screen and (max-width:375px){
+    
+    .div-encriptador h4 {
+        font-size: 0.6rem;
+    }
+    
+
+}
